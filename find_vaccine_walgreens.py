@@ -4,14 +4,14 @@ from selenium.webdriver.common.keys import Keys
 import smtplib, ssl
 
 sender_email = "python.notify.35@gmail.com"
-receiver_email = "anniedde@gmail.com"
+receiver_email = "my@gmail.com" # change this to your email
 
 port = 465  # For SSL
 password = "Sefvik-zukco0-pedzoc"
 
-driver = webdriver.Chrome('/Users/annie/Downloads/chromedriver')  # Optional argument, if not specified will search path.
+driver = webdriver.Chrome('mycomputer/chromedriver')  # change this location to where your chromedriver is located
 driver.get('https://www.walgreens.com/findcare/vaccination/covid-19?ban=covid_scheduler_brandstory_main_March2021');
-#time.sleep(5) # Let the user actually see something!
+
 button = driver.find_element_by_class_name('btn')
 button.click()
 time.sleep(5)
